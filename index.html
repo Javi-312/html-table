@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Javi's htmltable</title>
+</head>
+<body>
+    <table class="container">
+        <tr class="row">
+            <th class="col">First Name</th>
+            <th class="col">Last Name</th>
+            <th class="col"> Full Name</th>
+        </tr>
+        {% for idx in range(users | legnth) %}
+        <tr class="row">
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
